@@ -109,15 +109,15 @@ namespace passwordGeneration
 
             if ((k == 4) && (length >= 8))
             {
-                textBox3.Text = "Очень надёжный";
+                textBox3.Text = "Very reliable";
             }
             else if ((k < 4) && (length >= 8))
             {
-                textBox3.Text = "Надёжный";
+                textBox3.Text = "Reliable";
             }
             else
             {
-                textBox3.Text = "Ненадёжный";
+                textBox3.Text = "Unreliable";
             }
         }
         static string generatePassword(int length, List<int> useSymvols)
@@ -199,6 +199,11 @@ namespace passwordGeneration
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
